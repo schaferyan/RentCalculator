@@ -1,0 +1,26 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane fx:id="mainBorderPane" fx:controller="rentui.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <left>
+        <VBox>
+            <Button fx:id="saveButton" onAction="#handleSaveRequest"/>
+            <Button fx:id="loadButton" onAction="#handleLoadRequest"/>
+            <Button fx:id="addPersonButton" onAction="#showNewPersonDialog"/>
+            <Button fx:id="editPersonButton" onAction="#handleEditPersonRequest"/>
+            <Button fx:id="deletePersonButton" onAction="#handleDeleteRequest"/>
+            <Button fx:id="editHouseButton" onAction="#handleEditHouseRequest"/>
+        </VBox>
+    </left>
+    <center>
+        <TableView fx:id="rentTable" onKeyPressed="#onKeyPressed">
+
+        </TableView>
+    </center>
+</BorderPane>

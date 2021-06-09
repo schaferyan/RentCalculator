@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="rentui.NewRoom"
+            prefHeight="400.0" prefWidth="600.0">
+    <header>
+
+    </header>
+
+    <content>
+        <VBox>
+            <GridPane fx:id="gridPane">
+                <Label text="Name of room: " GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label text="Room Fee: " GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <TextField fx:id="amountField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            </GridPane>
+            <GridPane fx:id="gridPaneChBx"/>
+            <Button fx:id="addOccupantButton" onAction="#addOccupant" text="Add Occupant"/>
+        </VBox>
+    </content>
+
+</DialogPane>
