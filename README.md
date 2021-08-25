@@ -1,5 +1,5 @@
 # RentCalculator
-JavaFX application for calculating shares of rent and bills in a communal living situation. This is
+JavaFX application for calculating shares of rent and bills in a communal living situation.
 
 ## Getting Started using Windows
 (Untested on Linux or Mac systems) 
